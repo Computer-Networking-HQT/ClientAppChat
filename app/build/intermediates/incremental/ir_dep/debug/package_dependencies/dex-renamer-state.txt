@@ -1,0 +1,4 @@
+#Tue Oct 22 01:43:16 ICT 2019
+base.0=D\:\\Test\\ChatAppClient\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex
