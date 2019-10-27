@@ -44,12 +44,13 @@
             android:id="@+id/edtpassword"
             android:textColor="#FAF2F2"
             android:textSize="35sp"
-            app:met_maxCharacters="20"
             android:inputType="textPassword"
             app:met_baseColor="#FFFFFF"
             app:met_floatingLabel="highlight"
             app:met_primaryColor="#FFFFFF"
             app:met_singleLineEllipsis="true"
+            app:met_maxCharacters="20"
+
             />
 
     </LinearLayout>

@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.chatappclient.Common.Common;
 import com.example.chatappclient.Model.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                             else if (user.getPassword().equals(edtpassword.getText().toString())) {
                                 Toast.makeText(MainActivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
+                                Common.currentUser = user;
                                 Intent homeIntent = new Intent(MainActivity.this,Home.class);
                                 startActivity(homeIntent);
                                 finish();//Chuyển qua activity mới và hủy activity hiện tại

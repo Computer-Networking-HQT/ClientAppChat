@@ -1,31 +1,30 @@
 package com.example.chatappclient.Model;
 
 public class User {
-    private String Name;
-    private String Password;
+    private String name;
+    private String password;
 
     public User() {
-
     }
 
     public User(String name, String password) {
-        Name = name;
-        Password = password;
-    }
-
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public void setPassword(String password) {
-        Password = password;
+        this.name = name;
+        this.password = password;
     }
 
     public String getName() {
-        return Name;
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

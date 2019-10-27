@@ -21,6 +21,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.chatappclient.MessageActivity" />
+        <activity android:name="com.example.chatappclient.ConnectServer" />
         <activity android:name="com.example.chatappclient.Home" />
         <activity android:name="com.example.chatappclient.MainActivity" >
             <intent-filter>
@@ -45,8 +47,9 @@
             android:value="@integer/google_play_services_version" />
 
         <provider
-            android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.example.chatappclient.com.android.tools.ir.server.InstantRunContentProvider"
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.chatappclient.lifecycle-process"
+            android:exported="false"
             android:multiprocess="true" />
     </application>
 
